@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes Store</title>
+    <link rel="stylesheet" href="cloth.css">
+</head>
+<body>
+     
+<div class="cont">
+        <aside class="filters">
+            <h3>Filters</h3>
+            <div class="filter-group">
+                <h4>Categories</h4>
+                <label><input type="checkbox" value="Ralph Lauren"> Ralph Lauren</label>
+                <label><input type="checkbox" value="Tommy Hilfiger">Tommy Hilfiger</label>
+                <label><input type="checkbox" value=""> Calvin Klein</label>
+                <label><input type="checkbox" value="Hugo Boss">Hugo Boss</label>
+            </div>
+            <div class="filter-group">
+                <h4>Price Range</h4>
+                <input type="range" min="0" max="500" value="250" class="price-range">
+                <div class="price-labels">
+                    <span>$0</span>
+                    <span>$500</span>
+                </div>
+            </div>
+        </aside>
+</div>
+<div class="products" id="clothesProducts">
+    <!-- DATA COMING FROM JS  -->
+</div>
+
+
+
+</body>
+
+<script src="./index.js"></script>
+</html>

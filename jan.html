@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Store</title>
+    <link rel="stylesheet" href="jans.css">
+</head>
+
+<body>
+
+    <div class="cont">
+        <aside class="filters">
+            <h3>Filters</h3>
+            <div class="filter-group">
+                <h4>Categories</h4>
+                <label><input type="checkbox" value="clothing" > Clothing</label>
+                <label><input type="checkbox" value="accessories"> Accessories</label>
+                <label><input type="checkbox" value="footwear" id="footwearCheckBox"> Footwear</label>
+                <label><input type="checkbox" value="Medicine"> Medicine</label>
+            </div>
+            <div class="filter-group">
+                <h4>Price Range</h4>
+                <input type="range" min="0" max="500" value="250" class="price-range">
+                <div class="price-labels">
+                    <span>$0</span>
+                    <span>$500</span>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <main id="productsList">
+        <!-- <section class="products">
+            <div class="product-card shirts">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.ORH_mwC_R1rP2xGViNy_lwHaE8&pid=Api&P=0&h=180"
+                    alt="Shirts">
+                <h3>Shirts</h3>
+                <p>$49.99</p>
+                <button>Add to Cart</button>
+                <p>Category: Apparel</p>
+                <p>Subcategory: Shirts</p>
+            </div>
+            <div class="product-card jeans">
+                <img src="https://images.unsplash.com/photo-1578939662863-5cd416d45a69?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9"
+                    alt="Jeans">
+                <h3>Jeans</h3>
+                <p>$49.99</p>
+                <button>Add to Cart</button>
+                <p>Category: Apparel</p>
+                <p>Subcategory: Jeans</p>
+            </div>
+            <div class="product-card shirts">
+                <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2hpdGUlMjB0JTIwc2hpcnR8ZW58MHx8MHx8fDA%3D"
+                    alt="White T-Shirt">
+                <h3>White T-Shirt</h3>
+                <p>$49.99</p>
+                <button>Add to Cart</button>
+                <p>Category: Apparel</p>
+                <p>Subcategory: Shirts</p>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1593032465175-481ac7f401a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8M3x8c3VpdHx8MHx8fHwxNjMzMTQyMjc1&ixlib=rb-1.2.1&q=80&w=1080"
+                    alt="Suit">
+                <h3>Suit</h3>
+                <p>$49.99</p>
+                <button>Add to Cart</button>
+                <p>Category: Apparel</p>
+                <p>Subcategory: Suits</p>
+            </div>
+            <div class="product-card">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.h73loFi8KWgUP71ELaCTCgHaHa&pid=Api&P=0&h=180"
+                    alt="Product 5">
+                <h3>Product 5</h3>
+                <p>$49.99</p>
+                <button>Add to Cart</button>
+                <p>Category: Unknown</p>
+            </div>
+            <div class="product-card">
+                <img src="https://images.hindustantimes.com/tech/img/2024/05/21/960x540/quinn-battick-ZvtYlEeA44I-unsplash_1692603190912_1716270884882.jpg"
+                    alt="Product 6">
+                <h3>Product 6</h3>
+                <p>$49.99</p>
+                <button>Add to Cart</button>
+                <p>Category: Unknown</p>
+            </div>
+            <div class="product-card">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.3zdjOCvK3gC4K7AvW9ynjQHaJ1&pid=Api&P=0&h=180"
+                    alt="Product 7">
+                <h3>Product 7</h3>
+                <p>$49.99</p>
+                <button>Add to Cart</button>
+                <p>Category: Unknown</p>
+            </div>
+            <div class="product-card">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.5VE3_GnO8zs11dQkBxHQEAHaEK&pid=Api&P=0&h=180"
+                    alt="Product 8">
+                <h3>Product 8</h3>
+                <p>$49.99</p>
+                <button>Add to Cart</button>
+                <p>Category: Unknown</p>
+            </div>
+            <div class="product-card">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.RbWU8eGn3yOb71JxqvNOxwHaHa&pid=Api&P=0&h=180"
+                    alt="Product 9">
+                <h3>Product 9</h3>
+                <p>$49.99</p>
+                <button>Add to Cart</button>
+                <p>Category: Unknown</p>
+            </div>
+            <div class="product-card">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.0g4DoZvvGbDLGcPeFSImMQHaE5&pid=Api&P=0&h=180"
+                    alt="Product 10">
+                <h3>Product 10</h3>
+                <p>$49.99</p>
+                <button>Add to Cart</button>
+                <p>Category: Unknown</p>
+            </div>
+            <div class="product-card">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.h0PnJVWRWPsBvbsrTe7TpQHaE8&pid=Api&P=0&h=180"
+                    alt="Product 11">
+                <h3>Product 11</h3>
+                <p>$49.99</p>
+                <button>Add to Cart</button>
+                <p>Category: Unknown</p>
+            </div>
+            <div class="product-card shoes">
+                <img src="https://images.unsplash.com/photo-1621881538090-b2b5ffaa996a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8M3x8bGVhdGhlciUyMHNob2V8fDB8fHx8MTYyNjgzNTY1MA&ixlib=rb-1.2.1&q=80&w=1080"
+                    alt="Leather Shoe">
+                <h3>Leather Shoe</h3>
+                <p>$49.99</p>
+                <button>Add to Cart</button>
+                <p>Category: Footwear</p>
+                <p>Subcategory: Shoes</p>
+            </div>
+            <div class="product-card">
+                <img src="https://plus.unsplash.com/premium_photo-1681223965359-846e790d1242?blend=000000&blend-alpha=10&blend-mode=normal&blend-w=1&crop=faces%2Cedges&h=630&mark=https:%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&mark-align=top%2Cleft&mark-pad=50&mark-w=64&w=1200&auto=format&fit=crop&q=60&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzA4NTEzNzM1fA&ixlib=rb-4.0.3"
+                    alt="Product 13">
+                <h3>Product 13</h3>
+                <p>$49.99</p>
+                <button>Add to Cart</button>
+                <p>Category: Unknown</p>
+            </div>
+            <div class="product-card">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.tWZR82b2Q47V3PcUiXkjhgHaFP&pid=Api&P=0&h=180"
+                    alt="Product 14">
+                <h3>Product 14</h3>
+                <p>$49.99</p>
+                <button>Add to Cart</button>
+                <p>Category: Unknown</p>
+            </div>
+            <div class="product-card shoes">
+                <img src="https://images.unsplash.com/photo-1534653299134-96a171b61581?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8d29tZW4lMjBzaG9lc3x8MHx8fHwxNjE5NzkyODYz&ixlib=rb-1.2.1&q=80&w=1080"
+                    alt="Women's Shoes">
+                <h3>Women's Shoes</h3>
+                <p>$49.99</p>
+                <button>Add to Cart</button>
+                <p>Category: Footwear</p>
+                <p>Subcategory: Shoes</p>
+            </div>
+            <div class="product-card">
+                <img src="https://i.pinimg.com/originals/e8/50/39/e850396fb5588accc1c5963554368949.jpg" alt="Product 16">
+                <h3>Product 16</h3>
+                <p>$49.99</p>
+                <button>Add to Cart</button>
+                <p>Category: Unknown</p>
+            </div>
+            <div class="product-card health">
+                <img src="https://images.unsplash.com/photo-1524638067-feba7e8ed70f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8NHx8aGVhbHRoJTIwcHJvZHVjdHN8fDB8fHx8MTYxODYxNzk0NQ&ixlib=rb-1.2.1&q=80&w=1080"
+                    alt="Health Product">
+                <h3>Health Product</h3>
+                <p>$49.99</p>
+                <button>Add to Cart</button>
+                <p>Category: Health</p>
+                <p>Subcategory: General Health</p>
+            </div>
+            <div class="product-card health">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2022/3/TB/NK/SI/41798655/dolo-650-tablets-1000x1000.jpg"
+                    alt="Dolo 650">
+                <h3>Dolo 650</h3>
+                <p>$49.99</p>
+                <button>Add to Cart</button>
+                 <p>Category: Health</p>
+                <p>Subcategory: Medicine</p>
+            </div>
+            <div class="product-card">
+                <img src="https://www.hi.edu/wp-content/uploads/2024/04/35b469_91ab9fea64b844b5be299f107840ed15_mv2.webp"
+                    alt="Product 19">
+                <h3>Product 19</h3>
+                <p>$49.99</p>
+                <button>Add to Cart</button>
+                <p>Category: Unknown</p>
+            </div>
+            <div class="product-card">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.59u0v-ab8DZkHHaRs2eS3AHaJ1&pid=Api&P=0&h=180"
+                    alt="Product 20">
+                <h3>Product 20</h3>
+                <p>$49.99</p>
+                <button>Add to Cart</button>
+                <p>Category: Unknown</p>
+            </div>
+        </section> -->
+    </main>
+
+
+
+</body>
+
+<script src="./index.js"></script>
+
+</html>
